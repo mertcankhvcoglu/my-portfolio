@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #181a1a;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: local('Onest'),
+    url('./assets/fonts/Onest-VariableFont_wght.ttf') format('woff2'),
+    url('./assets/fonts/Onest-VariableFont_wght.ttf') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

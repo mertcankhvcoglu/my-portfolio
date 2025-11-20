@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+    height: 65px;
+    background-color: #181a1a;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #343F3E;
+}
+
+.title {
+    font-family: 'Onest', sans-serif;
+    font-weight: 400;
+    color: #f7f7f7;
+    font-size: 23px;
+
+}
+
+.header_mk {
+    height: 95px;
+    width: 95px;
+    margin-left: 10%;
+    margin-right: 8px;
+}
