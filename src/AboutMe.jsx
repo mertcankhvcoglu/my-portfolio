@@ -10,9 +10,11 @@ function AboutMe() {
             <div className='about-text'>
                 <h1 className='about-title'>Mertcan Kahvecioğlu</h1>
                 <p className='about-description'>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda odio nostrum eveniet. Laudantium corporis nemo quasi vero, neque pariatur non!
-                </p>
-                <button className='about-btn'>GitHub sayfam</button>
+                    Full-Stack Yazılım Geliştirici ve UX-UI Tutkunu. Bunlarla birlikte derin öğrenme ve görüntü işleme konusunda bir bitirme projesi, bilgisayarlı görü ile nesne tespitine yönelik bir staj projesi geliştirdim. Aynı zamanda hobilerim kapsamında Unity ile oyun prototipleri geliştiriyorum.              </p>
+                <a href="./assets/other/mertcan-kahvecioglu-cv-tur.pdf" download="./assets/other/mertcan-kahvecioglu-cv-tur.pdf">
+                    <button className='about-btn'>CV İndir</button>
+                </a>
+
             </div>
 
             {/* Sağ taraf yuvarlak portre */}

@@ -2,17 +2,6 @@
     padding: 0px 25%;
 }
 
-.section-title {
-    font-family: 'Onest', sans-serif;
-    color: #f7f7f7;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #343F3E;
-    /*alttaki ince cizgi*/
-    padding-bottom: 10px;
-    width: 100%;
-}
-
 .projects-grid {
     display: grid;
     /* En az 300px genişliğinde kolonlar oluştur, sığdığı kadar yan yana koy */
@@ -22,7 +11,7 @@
 }
 
 .project-card {
-    background-color: #343F3E;
+    background-color: #242626;
     border-radius: 12px;
     overflow: hidden;
     display: flex;
@@ -52,6 +41,7 @@
     flex-direction: column;
     column-gap: 50px;
     flex-grow: 1; */
+    padding-bottom: 20px;
 }
 
 .project-title {
@@ -69,6 +59,17 @@
 
 .project-keywords {
     font-family: 'Onest', sans-serif;
-    color: #3595b3;
+    color: #288784;
     font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        padding: 0 20px;
+    }
+
+    .projects-grid {
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
 }

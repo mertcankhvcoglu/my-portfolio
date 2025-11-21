@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0px 25%;
-    min-height: 80vh;
+    min-height: 65vh;
 }
 
 .about-text {
@@ -40,7 +40,7 @@
 }
 
 .about-btn:hover {
-    background-color: #293130;
+    background-color: #288784;
 }
 
 .about-img-box {
@@ -54,10 +54,40 @@
     width: 350px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #222;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 768px) {
+    .about-container {
+        padding: 50px 20px;
 
+        /*resmi üste geçiriyoruz*/
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
 
-/* f7f7f7 */
+    .about-title {
+        text-align: center;
+    }
+
+    .about-text {
+        padding-right: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .about-description {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+    }
+
+    .about-img {
+        margin-top: 40px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-btn {
+        width: 100%;
+    }
+}

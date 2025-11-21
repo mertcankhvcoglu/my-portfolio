@@ -1,9 +1,25 @@
 /* COLOR CODES
 
+f7f7f7 -->WHITE (NAME)
+
 343F3E --> LIGHT GREY (LOGO)
 
-f7f7f7 --> WHITE (NAME)
+242626  --> MID GREY 
 
 181a1a  --> DARK GREY (BACKGROUND)
 
+288784 --> GREENISH BLUE
+
 */
+
+/*Every section title*/
+.section-title {
+    font-family: 'Onest', sans-serif;
+    color: #f7f7f7;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #343F3E;
+    /*alttaki ince cizgi*/
+    padding-bottom: 10px;
+    width: 100%;
+}

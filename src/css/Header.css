@@ -1,10 +1,25 @@
 .header {
     width: 100%;
     height: 55px;
-    background-color: #181a1a;
+    background-color: rgba(24, 26, 26, 0.75);
     display: flex;
     align-items: center;
     border-bottom: 1px solid #343F3E;
+    justify-content: space-between;
+    padding: 0 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+
+    backdrop-filter: blur(4px);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .title {
@@ -12,12 +27,151 @@
     font-weight: 400;
     color: #f7f7f7;
     font-size: 16px;
-
 }
 
 .header_mk {
     height: 75px;
     width: 75px;
-    padding-left: 2%;
-    margin-right: 8px;
+}
+
+.header-right {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f7f7f7;
+    font-family: 'Onest', sans-serif;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    color: #288784;
+}
+
+.header-socials {
+    display: flex;
+    gap: 10px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242626;
+    border-radius: 6px;
+    width: 37px;
+    height: 37px;
+    transition: 0.2s;
+
+}
+
+.social-btn img {
+    width: 17px;
+    height: 17px;
+}
+
+.social-btn:hover {
+    background-color: #288784;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    align-self: center;
+    gap: 5px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+
+    /* 2. Header düzeni */
+    .header {
+        padding: 0 20px;
+        /* Kenar boşluklarını daralt */
+    }
+
+    .title {
+        font-size: 14px;
+        /* İsim mobilde biraz küçülsün */
+    }
+
+    .header_mk {
+        height: 50px;
+        /* Logo mobilde çok yer kaplamasın */
+        width: 50px;
+    }
+
+    /* 3. Hamburger İkonunu Göster */
+    .hamburger {
+        display: flex;
+        z-index: 1001;
+        /* Menünün üstünde kalmalı */
+    }
+
+    /* 4. Menü (Nav Links) Yapısı - Drawer (Çekmece) Modeli */
+    .nav-links {
+        position: fixed;
+        top: 10;
+        right: -100%;
+        /* Ekranın sağından dışarı atıyoruz (Gizli) */
+        width: 70%;
+        /* Ekranın %70'ini kaplasın */
+        height: 100vh;
+        /* Tam boy */
+
+        /* Menü arka planı (Yine buzlu cam efekti verelim) */
+        background-color: rgba(24, 26, 26, 0.95);
+        backdrop-filter: blur(10px);
+
+        flex-direction: column;
+        /* Linkler alt alta dizilsin */
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        transition: 0.4s ease-in-out;
+        /* Kayma efekti */
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Menü Açıldığında (.active sınıfı gelince) */
+    .nav-links.active {
+        right: 0;
+        /* Ekrana geri gelsin */
+    }
+
+    .nav-item {
+        font-size: 1.5rem;
+        /* Linkler mobilde büyük olsun, parmakla basılsın */
+    }
+
+    /* 5. Hamburger İkonu Animasyonu (X şekline dönüşme) */
+    .hamburger.open .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.open .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
