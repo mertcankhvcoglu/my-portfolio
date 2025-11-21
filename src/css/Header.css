@@ -104,8 +104,12 @@
 
     /* 2. Header düzeni */
     .header {
-        padding: 0 20px;
+        padding: 0 0;
         /* Kenar boşluklarını daralt */
+    }
+
+    .header-left {
+        gap: 0px;
     }
 
     .title {
@@ -119,8 +123,13 @@
         width: 50px;
     }
 
+    .social-btn {
+        border-radius: 50%;
+    }
+
     /* 3. Hamburger İkonunu Göster */
     .hamburger {
+        padding-right: 15px;
         display: flex;
         z-index: 1001;
         /* Menünün üstünde kalmalı */
