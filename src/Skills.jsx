@@ -6,7 +6,7 @@ const Skills = () => {
     return (
         <section className='skills-container'>
 
-            <h2 className='section-title'>Tekolojik Birikimim</h2>
+            <h2 className='section-title'>Teknolojik Birikimim</h2>
             <div className='skills-grid'>
                 {skills.map((skill) => (
                     <div key={skill.id} className='skill-card'>
